@@ -1,20 +1,4 @@
-/* ====================================================
 
-	File Name: Core CSS (core.css)
-	Description: Core stylesheet for Canvas
-	Author: Donny Burnside
-	Author URI: http://www.donnyburnside.com
-	Version: 1.0.0
-	License: GNU General Public License v3.0
-	License URI: http://www.gnu.org/licenses/gpl.html
-
-	Canvas - A Free Website Template by Donny Burnside
-	Copyright 2015 Donny Burnside
-	Distributed under the terms of the GNU GPL
-
-	For help and support please visit http://www.donnyburnside.com
-
-   ==================================================== */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, input {
 	margin:0;
 	padding:0;
@@ -299,7 +283,7 @@ ul.horizontal-navigation  > li {
 	height:auto;
 }
 .slider-navigation {
-	
+
 }
 .slider-navigation .prev,
 .slider-navigation .next {
@@ -364,10 +348,10 @@ ul.horizontal-navigation  > li {
 	background:#333;
 }
 #isotope-menu ul {
-	
+
 }
 #isotope-menu ul li {
-	
+
 }
 #isotope-menu ul li a {
 	display:block;
@@ -724,7 +708,7 @@ input[type="cancel"] {
    Site Header
 */
 #site-header {
-	
+
 }
 
 
@@ -761,10 +745,10 @@ input[type="cancel"] {
    Main Menu
 */
 #main-menu {
-	
+
 }
 #main-menu ul.horizontal-navigation > li {
-	
+
 }
 #main-menu ul.horizontal-navigation > li > a {
 	display:block;
@@ -852,7 +836,7 @@ input[type="cancel"] {
    Blog Post
 */
 .post {
-	
+
 }
 .post .entry-header {
 	margin-bottom:16px;
@@ -899,7 +883,7 @@ input[type="cancel"] {
 	display:block;
 	width:100%;
 	height:auto;
-	
+
 }
 .post .entry-content {
 	margin-bottom:16px;
@@ -933,10 +917,10 @@ input[type="cancel"] {
 	padding-left:6rem;
 }
 .post.summary .entry-header {
-	
+
 }
 .post.summary .entry-header .entry-title {
-	
+
 }
 .post.summary .entry-header .entry-meta {
 	margin:16px 0 0;
@@ -962,7 +946,7 @@ input[type="cancel"] {
 	margin:1rem 0 0;
 }
 .post.summary .entry-summary p {
-	
+
 }
 
 @media (min-width: 768px) {
@@ -991,7 +975,7 @@ input[type="cancel"] {
 	07. Sidebar
    ==================================================== */
 .sidebar {
-	
+
 }
 .sidebar .widget {
 	margin-bottom:32px;
@@ -1004,7 +988,7 @@ input[type="cancel"] {
 	color:#999;
 	border:1px solid #e2e2e2;
 	-webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.25), 0 0 40px rgba(0, 0, 0, 0.06) inset;
-	-moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.25), 0 0 40px rgba(0, 0, 0, 0.06) inset; 
+	-moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.25), 0 0 40px rgba(0, 0, 0, 0.06) inset;
 	box-shadow:0 1px 4px rgba(0, 0, 0, 0.25), 0 0 40px rgba(0, 0, 0, 0.06) inset;
 }
 .sidebar .widget ul {
@@ -1012,7 +996,7 @@ input[type="cancel"] {
 	padding:0.75rem;
 	background:#fff;
 	-webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.25), 0 0 40px rgba(0, 0, 0, 0.06) inset;
-	-moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.25), 0 0 40px rgba(0, 0, 0, 0.06) inset; 
+	-moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.25), 0 0 40px rgba(0, 0, 0, 0.06) inset;
 	box-shadow:0 1px 4px rgba(0, 0, 0, 0.25), 0 0 40px rgba(0, 0, 0, 0.06) inset;
 }
 .sidebar .widget ul li {
@@ -1070,7 +1054,7 @@ input[type="cancel"] {
    Contact Widget
 */
 .contact-widget {
-	
+
 }
 .contact-widget .name {
 	font-size:16px;
@@ -1122,14 +1106,14 @@ input[type="cancel"] {
    Recent Posts
 */
 .recent-posts-widget {
-	
+
 }
 .recent-posts-widget ul {
 	padding:16px;
 	padding:1rem;
 	background:#fff;
 	-webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.25), 0 0 40px rgba(0, 0, 0, 0.06) inset;
-	-moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.25), 0 0 40px rgba(0, 0, 0, 0.06) inset; 
+	-moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.25), 0 0 40px rgba(0, 0, 0, 0.06) inset;
 	box-shadow:0 1px 4px rgba(0, 0, 0, 0.25), 0 0 40px rgba(0, 0, 0, 0.06) inset;
 }
 .recent-posts-widget li.recent-post {
@@ -1181,7 +1165,7 @@ input[type="cancel"] {
 	Connect Widget
 */
 .connect-widget {
-	
+
 }
 
 /*
@@ -1215,10 +1199,10 @@ input[type="cancel"] {
 	background:#000;
 }
 #footer .copyright {
-	
+
 }
 #footer .attribution {
-	
+
 }
 #footer a {}
 #footer a:hover {
