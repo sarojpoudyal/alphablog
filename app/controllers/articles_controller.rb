@@ -2,7 +2,7 @@ class ArticlesController < ApplicationController
   before_filter :require_login, only: [:new, :create, :edit, :update]
   include ArticlesHelper
   def index
-    @articles = Article.all
+    @articles = Article.paginate(page: params[:page], per_page: 5)
   end
   def show
     @article = Article.find(params[:id])
@@ -15,7 +15,6 @@ class ArticlesController < ApplicationController
 
   def create
     @article = Article.new(article_params)
-    @article.author = current_user
     @article.save
 
     flash.notice = "Article was successfully Created"

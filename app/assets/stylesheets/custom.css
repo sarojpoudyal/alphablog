@@ -19,3 +19,13 @@
 /* ====================================================
 	Add your custom CSS below
    ==================================================== */
+
+.single-tag{
+	padding: 2px;
+	margin-right: 5px;
+	background-color: #eaeaea;
+	border-radius: 5px;
+}
+main{
+	border-bottom: 5px solid skyblue;
+}

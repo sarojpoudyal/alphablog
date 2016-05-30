@@ -1,24 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Blog Your Mind</title>
+  <title>Techonology::News</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
-  <div id="container">
-    <div id="content">
-      <%= yield %>
-      <hr>
-      <h6>
+<body class="blog" itemscope itemtype="http://schema.org/Blog">
+  <%= render 'layouts/masthead' %>
+  	<main id="content" role="main">
+
+		<div class="section">
+			<div class="container">
+				<div class="row">
+
+					<div class="three-quarters-block">
+						<div class="content">
+
+                <%= yield %>
+
+
+            </div>
+          </div>
+          <%= render partial:'layouts/sidebar', :locals =>{:tags => Tag.all} %>
+        </div>
+      </div>
+    </div>
+  </main>
+  <%= render 'layouts/footer' %>
+
+
+
+
+                  <small>
         <% if logged_in? %>
           <%= "Logged in as #{current_user.email}" %>
-          <%= link_to "(logout)", logout_path %>
+          <%= link_to "  Logout", logout_path %>
+          <ul>
+            <li>
+              <%= link_to "Create a new article", new_article_path, class: "new_article" %>
+            </li>
+          </ul>
         <% end %>
-      </h6>
-    </div>
-  </div>
+      </small>
+  
 </body>
 
 </html>

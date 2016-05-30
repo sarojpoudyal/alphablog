@@ -14,6 +14,10 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'paperclip'
 
 gem 'sorcery'
+
+gem 'will_paginate', '3.0.7'
+
+gem 'font-awesome-sass'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 

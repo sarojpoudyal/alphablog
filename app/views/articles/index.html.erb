@@ -1,12 +1,54 @@
-<h1>All Articles</h1>
-
-<ul>
   <% @articles.each do |article| %>
-    <li>
-      <%= link_to  article.title, article_path(article) %>
-    </li>
-  <% end %>
-</ul>
-<% if logged_in? %>
-<%= link_to "Create a new article", new_article_path, class: "new_article" %>
+<article class="post summary hentry" itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
+
+								<header class="entry-header">
+
+									<h2 class="entry-title" itemprop="headline">
+                      <%= link_to article.title, article_path(article),    :html=> {title:"Article Title", rel:"bookmark", itemprop:"url"} %>
+                  </h2>
+
+									<div class="entry-meta">
+
+										<span class="post-date">
+											<i class="fa fa-clock-o fa-fw"></i> <span class="updated"><%= article.updated_at.to_formatted_s(:long) %></span>
+										</span> <!-- .post-date -->
+
+										<!-- <span class="post-author">
+											<i class="fa fa-user fa-fw"></i> Written by <span class="vcard"><a class="fn url" href="author.html">Author</a></span>
+										</span> <!-- .post-author -->
+
+										<!-- <span class="post-categories">
+											<i class="fa fa-folder fa-fw"></i> <a href="blog.html" rel="tag">Category A</a>, <a href="blog.html" rel="tag">Category B</a>
+										</span> <!-- .post-categories -->
+
+										<span class="post-tags">
+											<i class="fa fa-tags fa-fw"></i>
+                      <% article.tags.each do |tag| %>
+                       <%= link_to tag.name, tag_path(tag), rel:"tag", class:"single-tag" %>
+                      <% end %>
+										</span> <!-- .post-tags -->
+
+									</div> <!-- .entry-meta -->
+
+								</header> <!-- .entry-header -->
+
+								<div class="entry-thumbnail">
+                    <%= link_to (image_tag article.image.url, alt:"Blog Post", itemprop:"image"), article_path(article), title:"Blog Post" %>
+
+								</div> <!-- .entry-thumbnail -->
+
+								<div class="entry-summary " itemprop="articleBody">
+
+								<%= simple_format(truncate(article.body, length: 200)) %>
+                <%= link_to "Read More", article_path(article), class:"more button" %>
+
+								</div> <!-- .entry-summary -->
+
+							</article> <!-- .post.summary -->
+
 <% end %>
+<div align="right">
+
+<%= will_paginate %>
+
+</div>
